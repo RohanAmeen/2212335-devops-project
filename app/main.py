@@ -8,6 +8,7 @@ models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="DevOps Project", version="1.0.0")
 
+
 # ── Pydantic schemas ─────────────────────────────────────
 class StudentCreate(BaseModel):
     reg_no: str
